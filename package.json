@@ -12,5 +12,13 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanm35/MercadoLiebre.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juanm35/MercadoLiebre/issues"
+  },
+  "homepage": "https://github.com/juanm35/MercadoLiebre#readme"
 }
