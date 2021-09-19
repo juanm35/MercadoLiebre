@@ -16,7 +16,9 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
-
+h2 {
+    margin-top: 10px    ;
+}
 
 
 
@@ -56,23 +58,30 @@ section {
 .barra {
     background-color: white;
     border-radius: 5px;
-    
     text-align: center;
+    border: none;
+    
+    
+    
+   /* text-align: center;
     width: 200px;
     margin: auto;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 5px;*/
     
 }
 
 
-
+body {
+    background-color: #ebebeb;
+}
 main {
    
     
     width: 90vw;
     
        margin: auto;
+     
     
 }
 
@@ -109,13 +118,25 @@ article {
 .linea1 div {
     width: 50%;
     padding-right: 5px;
-    position: relative
+    
 }
-.linea1 i {
+.linea1 input {
+    width: 100%;
+}
+.busq {
+    display: flex;
+    position: relative;
+    
+}
+.linea1 div i {
     position: absolute;
     right: 10px;
+    top: 35%;
+    color:gray;
+      
 
 }
+
 .linea2 {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -130,7 +151,10 @@ article {
     padding-right: 5px;
     font-size: 4px;
     
-
+}
+.linea2 p {
+    font-size: 4vw;
+    font-weight: bolder;
 }
 
 .imagen {
@@ -198,17 +222,20 @@ article {
     
 }*/
 h5 {
-    font-size: 18px;
+    font-size: 100%;
     font-family: 'Roboto', sans-serif;
     width:30%;
+    margin: auto;
+    margin-right: 5px;
     
     
     }
 h4{
-    font-size: 16px;
+    font-size: 100%;
     font-family: 'Roboto', sans-serif;
     width:70%;
     color: #39b54a;
+    margin: auto;
     }
 
     .banner {
@@ -279,7 +306,37 @@ h4{
         color: white;
         padding: 5px 10px;
         border-radius: 5px;
+        margin: 10px 0px;
 
+    }
+    .form-registro {
+        margin-top: 30px;
+        background-color: lightgrey;
+        padding: 8px;
+        border-radius: 5px;
+
+    }
+    .form-registro label{
+        display: block;
+    }
+    .form-registro input, select {
+        width: 100%;
+        margin: 5px 0px;
+    }
+    .form-registro input:focus {
+        border: #EAC926 2px solid
+    }
+
+    .form-registro .radio {
+        width: 20%;
+        
+    }
+
+    
+    
+    
+    header {
+        width: 100vw;
     }
     
     @media (min-width: 361px){
@@ -292,17 +349,19 @@ h4{
                  display: none;
            
         }
-        .main-header-bottom {
-            display: flex;
-            
-            
-        }
+       
         .main-header-bottom {
             display: flex;
             justify-content: space-between;
             width: 100%;
             padding: 8px;
+            font-size: 2vw;
             
+            
+        }
+        .right-navbar {
+            display: flex;
+            justify-content: right;
             
         }
         .main-header-top {
@@ -312,6 +371,30 @@ h4{
             padding: 5px;
             width: 100%;
             }
+
+            .barra {
+                height: 30%;
+                margin: auto;
+            }
+            .linea1 div i {
+                 top: 35%;
+                 right: -25px;
+                 background-color: lightgray;
+                 color:black;
+                 height: 30%;
+                 border-radius: 5px;
+                 text-align: center;
+                 padding: 5px;                 
+              }
+              .linea2 p {
+                  font-size: 100%;
+                  
+              }
+
+              .linea1 img {
+                  width: 40%;
+              }
+             
             h3 {
                 display:none;
                         }
@@ -330,14 +413,15 @@ h4{
                     transform: rotateZ(-90deg);
             }
 
-            }
-            .logo {
-                width: 20%;
+            .form-registro {
+                width: 90%;
+                margin: 30px auto;
             }
             
-            header {
-                width: 100vw;
+
+
             }
+            
             
     
 
@@ -360,7 +444,32 @@ h4{
             
         }
 
+        .form-registro {
+            width: 50%;
+            margin: 30px auto;
+        }
+        .main-header-bottom {
+            
+            font-size: 100%;
+            
+            
+        }
+        .right-navbar {
+            padding-right: 15px;
+        }
+        .linea2 {
+            padding-right: 15px;
+        }
+        h2 {
+            font-size: 2em;
+        }
+        
     }
+    @media (min-width: 1000px) {
+    .busq {
+        margin-left: 15vw;
+
+    }}
     
 
     
